@@ -1,0 +1,44 @@
+{
+  "name": "crap4ts",
+  "version": "0.1.0",
+  "description": "CRAP metric analyzer for TypeScript, JavaScript, and React projects",
+  "type": "module",
+  "bin": {
+    "crap4ts": "./dist/cli.js"
+  },
+  "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "spec.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepare": "npm run build",
+    "crap": "node dist/cli.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "crap",
+    "complexity",
+    "coverage",
+    "typescript",
+    "react",
+    "quality"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "vitest": "^3.0.9"
+  }
+}
