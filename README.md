@@ -83,8 +83,14 @@ crap4ts packages/app packages/ui
 - `1` invalid CLI usage / hard failure
 - `2` CRAP threshold exceeded (`> 8.0`)
 
-## Notes
+## Demo React app
 
-- If coverage JSON/LCOV is missing, coverage is reported as `N/A`.
-- Report output is sorted by CRAP descending, with `N/A` at the bottom.
-- Package roots are detected by walking up to the nearest `package.json`.
+A mini React taskboard lives in `examples/taskboard` (~20 source files with UI, hooks, and logic):
+
+```bash
+npm run build
+cd examples/taskboard
+npm install
+npm run crap:coverage   # generate Istanbul coverage
+npm run crap            # analyze with --use-existing-coverage
+```

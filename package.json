@@ -20,7 +20,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "prepare": "npm run build",
-    "crap": "node dist/cli.js"
+    "crap": "node dist/cli.js",
+    "demo:crap": "npm run build && npm --prefix examples/taskboard run crap:coverage && npm --prefix examples/taskboard run crap"
   },
   "engines": {
     "node": ">=18"
