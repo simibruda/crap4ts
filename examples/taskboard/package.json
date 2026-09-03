@@ -1,0 +1,23 @@
+{
+  "name": "taskboard-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "crap:coverage": "vitest run --coverage --coverage.reporter=json --coverage.reporter=lcov",
+    "crap": "node ../../dist/cli.js --use-existing-coverage",
+    "crap:fresh": "node ../../dist/cli.js"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitest/coverage-v8": "^3.0.9",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}
